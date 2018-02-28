@@ -279,7 +279,7 @@ public class ProductsList extends AppCompatActivity {
             protected void populateViewHolder(final ProductsViewHolder viewHolder, final Product model, final int position) {
                 viewHolder.products_name.setText(model.getName());
                 viewHolder.products_discount.setText(model.getDiscount());
-                viewHolder.products_price.setText(String.format("Pretul de la %s", model.getPrice().toString() + " MDL"));
+                viewHolder.products_price.setText(String.format("Prețul de la %s \t", model.getPrice().toString() + " MDL"));
                 Picasso.with(getBaseContext()).load(model.getImage())
                         .into(viewHolder.products_image);
 

@@ -27,8 +27,6 @@ public class ProductsDetail extends AppCompatActivity {
     TextView products_name, products_price, products_description;
     ImageView products_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
-    FloatingActionButton btnCart;
-    ElegantNumberButton numberButton;
 
     String productsId = "";
 
