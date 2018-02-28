@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "984371385331",
+    "firebase_url": "https://confort-669b4.firebaseio.com",
+    "project_id": "confort-669b4",
+    "storage_bucket": "confort-669b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984371385331:android:df8b74a7c0d31872",
+        "android_client_info": {
+          "package_name": "com.confortapp.leon.confortapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984371385331-hi8hapcde4p8uvef99u47h9dnijtrgiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.confortapp.leon.confortapp",
+            "certificate_hash": "4a308d7dd317bd83d2887c7447adea714f2b189a"
+          }
+        },
+        {
+          "client_id": "984371385331-hprheo1j9b4knafpedisecn9u962g2ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7O-gv2glvqevEs62bbZIePTqdcAz8OwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984371385331-hprheo1j9b4knafpedisecn9u962g2ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

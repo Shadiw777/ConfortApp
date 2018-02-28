@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ConfortApp</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">756247687898603</string>
+    <string name="facebook_login_protocol_name">fb756247687898603</string>
+</resources>

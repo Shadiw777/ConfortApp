@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.confortapp.leon.confortapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/est"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:text="Fashion Wear"
+                        android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="Size  "
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="S" />
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="M" />
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="L" />
+
+                            <TextView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="XL" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adsds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DSCRIPTION"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/discription1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="4dp"
+                        android:text="IZINC brings to you this hooded which will be a great inclusion your wardrobe. Designed to sartorial perfection, this T shirt is made of premium quality fabric and will let you stay in sheer comfort all day long.this T shirt will be the perfect pick for any occasion."
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/addtocart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="ADD TO CART"
+
+                        android:textColor="#fff"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="11dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="16dp"
+                        android:text="BUY THE LOOK"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:padding="16dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
