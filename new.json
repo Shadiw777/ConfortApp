@@ -1,0 +1,125 @@
+{
+  "Banner" : {
+    "01" : {
+      "id" : "39",
+      "image" : "http://confort.md/wp-content/uploads/2017/01/bancheta-main_accessorii-min-600x400.jpg",
+      "name" : "Bancheta T-10 40x40"
+    },
+    "02" : {
+      "id" : "29",
+      "image" : "http://confort.md/wp-content/uploads/2017/07/n9_main-600x400.jpg",
+      "name" : "Canapea N-12"
+    },
+    "03" : {
+      "id" : "06",
+      "image" : "http://confort.md/wp-content/uploads/2017/12/N-14_2-600x400.jpg",
+      "name" : "Coltar N-14"
+    },
+    "04" : {
+      "id" : "14",
+      "image" : "http://confort.md/wp-content/uploads/2017/01/irina12_main-600x400.jpg",
+      "name" : "Pat Irina 12"
+    }
+  },
+  "Category" : {
+    "01" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/07/n9_main-600x400.jpg",
+      "name" : "Canapele"
+    },
+    "02" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/06/3.-Irina-600x400.jpg",
+      "name" : "Coltare"
+    },
+    "03" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/01/t12set_main-600x400.jpg",
+      "name" : "Seturi"
+    },
+    "04" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/06/7P1A9148-600x400.jpg",
+      "name" : "Mobila corp"
+    },
+    "05" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/01/Irina-12-600x400.jpg",
+      "name" : "Paturi"
+    },
+    "06" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/01/scaune-si-mese-600x400.jpg",
+      "name" : "Scaune si mese"
+    },
+    "07" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/01/bancheta-main_accessorii-min-600x400.jpg",
+      "name" : "Accesorii"
+    },
+    "08" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/09/T-6-1-600x400.jpg",
+      "name" : "Fotolii"
+    },
+    "09" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/08/roz1-min-600x400.jpg",
+      "name" : "Mobila pentru bucatarie"
+    },
+    "10" : {
+      "image" : "http://confort.md/wp-content/uploads/2017/07/t10_main-1-600x400.jpg",
+      "name" : "Mobila de birou"
+    }
+  },
+  "Products" : {
+    "01" : {
+      "description" : "Sortiment este prezentat cu canapele in diferite dimensiuni:\nCanapea extensibilă: 1000 mm x 980 mm (Spațiu de dormit: 1880 mm x 780 mm) h = 940 mm\nPrețul de la 3 800 MDL\n\nCanapea extensibilă: 1200 mm x 980 mm (Spațiu de dormit: 1880 mm x 980 mm) h = 940 mm\nPrețul de la 4 100 MDL\n\nCanapea extensibilă: 1400 mm x 980 mm (Spațiu de dormit: 1880 mm x 1180 mm) h = 940 mm\nPrețul de la 4 600 MDL\n\nCanapea extensibilă: 1700 mm x 980 mm (Spațiu de dormit: 1880 mm x 1480 mm) h = 940 mm\nPrețul de la 5 000 MDL\n\nCanapea extensibilă: 1900 mm x 980 mm (Spațiu de dormit: 1880 mm x 1680 mm) h = 940 mm\nPrețul de la 5 500 MDL",
+      "discount" : "-10%",
+      "image" : "http://confort.md/wp-content/uploads/2018/02/N-5-ZB2_main-1.jpg",
+      "menuId" : "01",
+      "name" : "Canapea N-5 ZB3",
+      "price" : "9000",
+        "images": [
+  {
+    "newimage": "https://images.cardekho.com/car-images/carexteriorimages/large/Ford/Ford-Mustang/ford-mustang-exterior-047.jpg"
+  },
+  {
+    "newimage": "https://www.enterprise.com/content/dam/global-vehicle-images/cars/FORD_FOCU_2012-1.png"
+  },
+  {
+    "newimage": "https://imagecdn8.cartrade.com/img/800x600/car-data/big/bmw-i8-default-image.png"
+  }
+]
+    },
+    "02" : {
+      "description" : "",
+      "discount" : "-3%",
+      "image" : "https://confort.kz/wp-content/uploads/2017/12/N-12-1.jpg",
+      "menuId" : "01",
+      "name" : "Canapea N-12",
+      "price" : "6900",
+        "images": [
+  {
+    "newimage": "https://images.cardekho.com/car-images/carexteriorimages/large/Ford/Ford-Mustang/ford-mustang-exterior-047.jpg"
+  },
+  {
+    "newimage": "https://www.enterprise.com/content/dam/global-vehicle-images/cars/FORD_FOCU_2012-1.png"
+  },
+  {
+    "newimage": "https://imagecdn8.cartrade.com/img/800x600/car-data/big/bmw-i8-default-image.png"
+  }
+]
+    },
+    "03" : {
+      "description" : "",
+      "discount" : "",
+      "image" : "https://confort.kz/wp-content/uploads/2017/12/t4-2g-1.jpg",
+      "menuId" : "01",
+      "name" : "Canapea T-4 MD",
+      "price" : "9650",
+    "images": [
+  {
+    "newimage": "https://images.cardekho.com/car-images/carexteriorimages/large/Ford/Ford-Mustang/ford-mustang-exterior-047.jpg"
+  },
+  {
+    "newimage": "https://www.enterprise.com/content/dam/global-vehicle-images/cars/FORD_FOCU_2012-1.png"
+  },
+  {
+    "newimage": "https://imagecdn8.cartrade.com/img/800x600/car-data/big/bmw-i8-default-image.png"
+  }
+]
+    }
+  }
+}
