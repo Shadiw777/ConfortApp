@@ -27,11 +27,19 @@
                     android:layout_height="300dp"
                     android:background="@android:color/black" />
 
+                <!--<in.myinnos.imagesliderwithswipeslibrary.SliderLayout-->
+                    <!--android:id="@+id/slider"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:background="@android:color/black"/>-->
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#fff"
                     android:orientation="vertical">
+
 
                     <TextView
                         android:id="@+id/est"
@@ -164,6 +172,7 @@
                         android:text="BUY THE LOOK"
                         android:textSize="16dp" />
 
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
@@ -173,6 +182,8 @@
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
+
+
     </ScrollView>
 
 </RelativeLayout>

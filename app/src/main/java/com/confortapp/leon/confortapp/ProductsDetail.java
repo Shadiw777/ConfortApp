@@ -75,14 +75,15 @@ public class ProductsDetail extends AppCompatActivity {
         }
     }
 
-    private void getDetailProducts(String foodId) {
-        products.child(foodId).addValueEventListener(new ValueEventListener() {
+    private void getDetailProducts(String ProductId) {
+        products.child(ProductId).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Product product = dataSnapshot.getValue(Product.class);
 
                 //Set image
-                Picasso.with(getBaseContext()).load(product.getImage())
+                Picasso.with(getBaseContext())
+                        .load(product.getImage())
                         .into(products_image);
 
                 collapsingToolbarLayout.setTitle(product.getName());
