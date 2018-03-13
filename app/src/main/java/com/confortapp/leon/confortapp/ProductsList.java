@@ -45,7 +45,7 @@ public class ProductsList extends AppCompatActivity {
     RecyclerView.LayoutManager layoutManager;
 
     FirebaseDatabase database;
-    DatabaseReference foodList;
+    DatabaseReference productList;
 
     String categoryId = "";
 
@@ -115,7 +115,7 @@ public class ProductsList extends AppCompatActivity {
 
         //Firebase
         database = FirebaseDatabase.getInstance();
-        foodList = database.getReference("Products");
+        productList = database.getReference("Products");
 
         //Local DB
         localDB = new Database(this);
@@ -223,7 +223,7 @@ public class ProductsList extends AppCompatActivity {
                 Product.class,
                 R.layout.products_item,
                 ProductsViewHolder.class,
-                foodList.orderByChild("name").equalTo(text.toString())
+                productList.orderByChild("name").equalTo(text.toString())
         ) {
             @Override
             protected void populateViewHolder(final ProductsViewHolder viewHolder, final Product model, final int position) {
@@ -237,10 +237,10 @@ public class ProductsList extends AppCompatActivity {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
                         //Start new Activity
-                        Intent foodDetail = new Intent(ProductsList.this, ProductsDetail.class);
+                        Intent productDetail = new Intent(ProductsList.this, ProductsDetail.class);
                         //Send FoodId to new Activity
-                        foodDetail.putExtra("ProductsId", searchAdapter.getRef(position).getKey());
-                        startActivity(foodDetail);
+                        productDetail.putExtra("ProductsId", searchAdapter.getRef(position).getKey());
+                        startActivity(productDetail);
                     }
                 });
             }
@@ -250,7 +250,7 @@ public class ProductsList extends AppCompatActivity {
     }
 
     private void loadSuggest() {
-        foodList.orderByChild("menuId").equalTo(categoryId)
+        productList.orderByChild("menuId").equalTo(categoryId)
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
@@ -272,8 +272,8 @@ public class ProductsList extends AppCompatActivity {
         adapter = new FirebaseRecyclerAdapter<Product, ProductsViewHolder>(Product.class,
                 R.layout.products_item,
                 ProductsViewHolder.class,
-                //like: Select * from Foods where menuId =
-                foodList.orderByChild("menuId").equalTo(categoryId)
+                //like: Select * from Products where menuId =
+                productList.orderByChild("menuId").equalTo(categoryId)
         ) {
             @Override
             protected void populateViewHolder(final ProductsViewHolder viewHolder, final Product model, final int position) {

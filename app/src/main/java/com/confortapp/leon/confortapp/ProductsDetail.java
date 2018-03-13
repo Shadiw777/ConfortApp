@@ -28,6 +28,8 @@ public class ProductsDetail extends AppCompatActivity {
     ImageView products_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
 
+    ImageView products_color1, products_color2, products_color3, products_color4;
+
     String productsId = "";
 
     FirebaseDatabase database;
@@ -57,6 +59,11 @@ public class ProductsDetail extends AppCompatActivity {
         products_price = (TextView) findViewById(R.id.products_price);
         products_description = (TextView) findViewById(R.id.products_description);
         products_image = (ImageView) findViewById(R.id.img_products);
+
+        products_color1 = (ImageView) findViewById(R.id.products_color1);
+        products_color2 = (ImageView) findViewById(R.id.products_color2);
+        products_color3 = (ImageView) findViewById(R.id.products_color3);
+        products_color4 = (ImageView) findViewById(R.id.products_color4);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppbar);
@@ -88,8 +95,26 @@ public class ProductsDetail extends AppCompatActivity {
 
                 collapsingToolbarLayout.setTitle(product.getName());
 
+
                 products_price.setText(product.getPrice());
                 products_name.setText(product.getName());
+
+                Picasso.with(getBaseContext())
+                        .load(product.getProducts_color1())
+                        .into(products_color1);
+
+                Picasso.with(getBaseContext())
+                        .load(product.getProducts_color2())
+                        .into(products_color2);
+
+                Picasso.with(getBaseContext())
+                        .load(product.getProducts_color3())
+                        .into(products_color3);
+
+                Picasso.with(getBaseContext())
+                        .load(product.getProducts_color4())
+                        .into(products_color4);
+
                 products_description.setText(product.getDescription());
             }
 
