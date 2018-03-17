@@ -14,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -34,14 +33,15 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity android:name=".ProductsList" />
-        <activity android:name=".ProductsDetail"></activity>
-
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".ProductsDetail" />
+        <activity android:name=".SearchActivity" />
 
         <provider
-            android:authorities="com.facebook.app.FacebookContentProvider756247687898603"
             android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider756247687898603"
             android:exported="true" />
+
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>

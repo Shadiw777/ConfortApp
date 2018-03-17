@@ -293,16 +293,17 @@ public class Home extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Intent intent;
 
         if (id == R.id.nav_menu) {
-            Intent intent;
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_cart) {
-            Toast.makeText(this, "Soon will be done", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_about) {
+            intent = new Intent(this, About.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_orders) {
+        } else if (id == R.id.nav_contacts) {
             Toast.makeText(this, "Soon will be done", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_log_out) {

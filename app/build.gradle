@@ -22,6 +22,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    //Scrolling Image_View
+    implementation 'com.github.Q42:AndroidScrollingImageView:1.3.2'
+
     //Circle Image_View
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
@@ -39,8 +42,8 @@ dependencies {
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
 
     //Facebook
-   // implementation 'com.facebook.android:facebook-share:4.30.0'
-    implementation ('com.facebook.android:facebook-share:[4,5)')
+    // implementation 'com.facebook.android:facebook-share:4.30.0'
+    implementation('com.facebook.android:facebook-share:[4,5)')
 
     implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
     implementation 'com.github.mancj:MaterialSearchBar:0.7.5'
