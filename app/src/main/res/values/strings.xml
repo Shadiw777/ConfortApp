@@ -18,4 +18,30 @@ Cu siguranță ați simțit plăcerea de a sta așezat pe o canapea sau un fotol
 Poate fi oare mobilierul ieftin și calitativ?  Până de curând, răspunsul la această întrebare, desigur, ar fi fost unul negativ. Dar acum, spargem cu succes toate stereotipurile. Astăzi, datorită tehnologiilor avansate, proceselor de producție eficiente, cooperării directe cu cei mai importanți furnizori de materiale si accesorii, mobilierul fabricii de mobilă  „Сonfort” a devenit accesibil unei game largi de cumpărători!\n\n
 
 În salonul „Сonfort”, veți găsi toată mobila, necesară pentru casă și birou.   Iar echipa noastră mare și prietenoasă, care cuprinde mai mult de 700 de profesioniști în domeniul, va realiza cele mai îndrăznețe idei ale Dvs.!</string>
+
+
+    <string name="name_of_fabric">FABRICA DE MOBILĂ "CONFORT"</string>
+    <string name="info_confort"><b>"CONFORT SRL"</b>\nRepublica Moldova, MD 2069\nChișinău, str.Mesager, 19</string>
+    <string name="info_confort1"><b>Salon-magazin:</b>\n(+373) 22 84-30-61</string>
+    <string name="info_confort2"><b>Anticamera:</b>\n(+373) 22 74-18-36;\nFax:(+373) 22 74-76-14.</string>
+    <string name="info_confort3"><b>Resurse umane / angajări:</b>\n(+373) 22 59-26-45</string>
+    <string name="info_confort4"><b>Secția reparații:</b>\n(+373) 22 84-30-59</string>
+
+
+    <string name="info_confort5">Program de lucru:</string>
+    <string name="info_confort6">Luni-Vineri\n08:00-19:00</string>
+    <string name="info_confort7">Sîmbătă\n08:00-17:00</string>
+    <string name="info_confort8">Duminica\n09:00-15:00</string>
+    <string name="info_confort9"><b>Transport:</b>\nMaxi-taxi №108\n(statie terminus, raion Sculeni)</string>
+
+
+
+    <string name="info_Romania"><u>ROMÂNIA</u></string>
+    <string name="info_Romania2"><b>București</b>\n\nHome and Design Mall\nBulevardul Ghencea 126-132\nSector 6, București, România\nJ40/11904/1998, RO11285388\n„Confort” bt. № 69-70\n\nLUNI - VINERI: 10.00-20.00\nSÂMBĂTĂ: 10.00-17.00\nDUMINICA: 10.00-15.00\nContact\nTel: +40 (736) 336 284\n\nBucurești, bd.Timișoara 56, sect.6 (Statia Frigocom)\nTel: (+40) 21 777 07 52\ne-mail: confortmd@yahoo.com</string>
+    <string name="info_Romania3"><b>Iași</b>\n\nMagazin de mobila "Confort"\nmun.Iași, b-dul. Nicolae Iorga 12a, jud. Iasi\ntel: 0754 223 024</string>
+    <string name="info_Romania4"><b>Jud. Iași, sat Tomești</b>\n\nDepozit se afla in Corp Constructie C1, hala 4/3\nTel/Fax: (+40) 232 206 081 (depozit)\nTel.mobil depozit; (+40) 754 223 019\ne-mail: consultingcomateos@yahoo.com\n\n<b>Constanța</b>\n\nStr.Ștefan cel Mare nr. 44, bloc M16, etaj 1\nTel.:0731741596</string>
+
+
+    <string name="info_Russia"><u>Rusia</u></string>
+    <string name="info_Russia1">Oficiu: or.Moskova, str. Ilovaiskaia 3, structura 2;\n\nTelefon: 8-926-316-58-78\n\nShowroom:\n\nCentrul comercial "Ханой"\n\nIaroslavskoie s.146k1\n\nTelefon: 89032111756\n\nCentrul comercial "Мебель Park Румянцево"\nșosea Kiev, 22 kilometru\n\nStație de metrou "Румянцево", sector B , 3 etaj.\nTelefon: +7 (926) 546-78-85.\n\nOraru de lucru:\nZilnic Luni-Duminica 10:00 - 21:00.</string>
 </resources>

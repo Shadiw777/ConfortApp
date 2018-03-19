@@ -304,7 +304,8 @@ public class Home extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_contacts) {
-            Toast.makeText(this, "Soon will be done", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this,ContactsActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_log_out) {
             finish();

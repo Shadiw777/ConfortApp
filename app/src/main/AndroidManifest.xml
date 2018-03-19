@@ -41,7 +41,8 @@
             android:authorities="com.facebook.app.FacebookContentProvider756247687898603"
             android:exported="true" />
 
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".ContactsActivity"></activity>
     </application>
 
 </manifest>
