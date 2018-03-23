@@ -20,8 +20,10 @@
     </style>
 
     <style name="ExpandedAppbar" parent="@android:style/TextAppearance.Material.Title" tools:targetApi="lollipop">
-        <item name="android:textColor">@color/colorPrimary</item>
+        <!--<item name="android:textColor">@color/colorPrimary</item>-->
+        <item name="android:textColor">#00000000</item>
         <item name="android:textStyle">normal</item>
     </style>
+
 
 </resources>

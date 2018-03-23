@@ -12,22 +12,33 @@ public class Product {
     private String menuId;
     private String discount;
 
+    private String image_2;
+
     private String products_color1, products_color2, products_color3, products_color4;
 
     public Product() {
     }
 
-    public Product(String name, String image, String description, String price, String menuId, String discount, String products_color1, String products_color2, String products_color3, String products_color4) {
+    public Product(String name, String image, String description, String price, String menuId, String discount, String image_2, String products_color1, String products_color2, String products_color3, String products_color4) {
         this.name = name;
         this.image = image;
         this.description = description;
         this.price = price;
         this.menuId = menuId;
         this.discount = discount;
+        this.image_2 = image_2;
         this.products_color1 = products_color1;
         this.products_color2 = products_color2;
         this.products_color3 = products_color3;
         this.products_color4 = products_color4;
+    }
+
+    public String getImage_2() {
+        return image_2;
+    }
+
+    public void setImage_2(String image_2) {
+        this.image_2 = image_2;
     }
 
     public String getProducts_color1() {

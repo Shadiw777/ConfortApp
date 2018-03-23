@@ -28,9 +28,6 @@ dependencies {
     //Circle Image_View
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
-    //Slider on Details
-    implementation 'com.android.volley:volley:1.1.0'
-
     //Image Slider Home
     implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'com.daimajia.slider:library:1.1.5@aar'

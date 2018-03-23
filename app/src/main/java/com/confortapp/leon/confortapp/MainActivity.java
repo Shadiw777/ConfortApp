@@ -18,9 +18,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.confortapp.leon.confortapp.Model.Banner;
 import com.confortapp.leon.confortapp.Model.Category;
 import com.confortapp.leon.confortapp.R;

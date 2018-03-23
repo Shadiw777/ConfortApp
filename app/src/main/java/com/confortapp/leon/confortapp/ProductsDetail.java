@@ -12,12 +12,18 @@ import android.widget.Toast;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.confortapp.leon.confortapp.Common.Common;
 import com.confortapp.leon.confortapp.Model.Product;
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.DefaultSliderView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -34,6 +40,10 @@ public class ProductsDetail extends AppCompatActivity {
 
     FirebaseDatabase database;
     DatabaseReference products;
+
+    //Slider
+    SliderLayout sliderProduct;
+    ArrayList<String> imagesList;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -80,6 +90,8 @@ public class ProductsDetail extends AppCompatActivity {
                 return;
             }
         }
+
+        setupSliderProduct(productsId);
     }
 
     private void getDetailProducts(String ProductId) {
@@ -99,13 +111,16 @@ public class ProductsDetail extends AppCompatActivity {
                 products_price.setText(product.getPrice());
                 products_name.setText(product.getName());
 
+
                 Picasso.with(getBaseContext())
                         .load(product.getProducts_color1())
                         .into(products_color1);
 
+
                 Picasso.with(getBaseContext())
                         .load(product.getProducts_color2())
                         .into(products_color2);
+
 
                 Picasso.with(getBaseContext())
                         .load(product.getProducts_color3())
@@ -123,5 +138,55 @@ public class ProductsDetail extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void setupSliderProduct(String ProductId) {
+        sliderProduct = (SliderLayout) findViewById(R.id.sliderProduct);
+        imagesList = new ArrayList<>();
+
+        products.child(ProductId)
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        Product product = dataSnapshot.getValue(Product.class);
+
+                        imagesList.add(product.getImage());
+                        imagesList.add(product.getImage_2());
+
+                        for (int i = 0; i < imagesList.size(); i++) {
+                            //Create Slider
+                            final DefaultSliderView defaultSliderView = new DefaultSliderView(getBaseContext());
+                            defaultSliderView
+                                    .image(imagesList.get(i))
+                                    .setScaleType(BaseSliderView.ScaleType.Fit);
+                            //Add extra bundle
+                            defaultSliderView.bundle(new Bundle());
+                            sliderProduct.addSlider(defaultSliderView);
+
+                            //Remove event after finish
+                            products.removeEventListener(this);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+
+        sliderProduct.setPresetTransformer(SliderLayout.Transformer.Default);
+        sliderProduct.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        sliderProduct.setCustomAnimation(new DescriptionAnimation());
+        sliderProduct.setDuration(4000);
+        sliderProduct.stopAutoCycle();
+        sliderProduct.startAutoCycle(4000, 4000, false);
+
+    }
+
+    @Override
+    protected void onStop() {
+        sliderProduct.stopAutoCycle();
+        finish();
+        super.onStop();
     }
 }
