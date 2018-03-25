@@ -68,7 +68,7 @@ public class ProductsDetail extends AppCompatActivity {
         products_name = (TextView) findViewById(R.id.products_name);
         products_price = (TextView) findViewById(R.id.products_price);
         products_description = (TextView) findViewById(R.id.products_description);
-        products_image = (ImageView) findViewById(R.id.img_products);
+        //products_image = (ImageView) findViewById(R.id.img_products);
 
         products_color1 = (ImageView) findViewById(R.id.products_color1);
         products_color2 = (ImageView) findViewById(R.id.products_color2);
@@ -100,10 +100,10 @@ public class ProductsDetail extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Product product = dataSnapshot.getValue(Product.class);
 
-                //Set image
-                Picasso.with(getBaseContext())
-                        .load(product.getImage())
-                        .into(products_image);
+//                //Set image
+//                Picasso.with(getBaseContext())
+//                        .load(product.getImage())
+//                        .into(products_image);
 
                 collapsingToolbarLayout.setTitle(product.getName());
 
@@ -182,6 +182,7 @@ public class ProductsDetail extends AppCompatActivity {
         sliderProduct.startAutoCycle(4000, 4000, false);
 
     }
+
 
     @Override
     protected void onStop() {

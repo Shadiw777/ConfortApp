@@ -17,6 +17,6 @@
         android:layout_marginTop="12dp"
         android:layout_gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
-        tools:text="Developer" />
+        tools:text="Example" />
 
 </LinearLayout>

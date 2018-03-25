@@ -220,10 +220,12 @@ public class Home extends AppCompatActivity
 
             }
         });
-        mSlider.setPresetTransformer(SliderLayout.Transformer.ZoomOut);
+        mSlider.setPresetTransformer(SliderLayout.Transformer.Default);
         mSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         mSlider.setCustomAnimation(new DescriptionAnimation());
         mSlider.setDuration(4000);
+        mSlider.stopAutoCycle();
+        mSlider.startAutoCycle(4000, 4000, false);
     }
 
 
@@ -258,10 +260,15 @@ public class Home extends AppCompatActivity
         mSlider.stopAutoCycle();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        mSlider.startAutoCycle();
+//    }
+
+    public void onResume() {
         mSlider.startAutoCycle();
+        super.onResume();
     }
 
     @Override
@@ -296,7 +303,7 @@ public class Home extends AppCompatActivity
         Intent intent;
 
         if (id == R.id.nav_menu) {
-            intent = new Intent(this, MainActivity.class);
+            intent = new Intent(this, Home.class);
             startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.nav_about) {
@@ -304,11 +311,12 @@ public class Home extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_contacts) {
-            intent = new Intent(this,ContactsActivity.class);
+            intent = new Intent(this, ContactsActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_log_out) {
             finish();
+            System.exit(0);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

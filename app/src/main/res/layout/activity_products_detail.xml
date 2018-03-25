@@ -22,13 +22,6 @@
             app:expandedTitleTextAppearance="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <!--<ImageView-->
-                <!--android:id="@+id/img_products"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:contentDescription="@null"-->
-                <!--android:scaleType="centerCrop"-->
-                <!--app:layout_collapseMode="parallax" />-->
 
             <com.daimajia.slider.library.SliderLayout
                 android:id="@+id/sliderProduct"
@@ -80,7 +73,7 @@
                         android:layout_marginTop="8dp"
                         android:padding="12dp"
                         android:text="Product Name"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="#212121"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -99,10 +92,9 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0"
-                            android:text="Pretul de la"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:text="Prețul de la"
+                            android:textColor="#212121"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:id="@+id/products_price"
@@ -110,18 +102,16 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="1,000"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textColor="#212121"
+                            android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="15"
                             android:text="MDL"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textColor="#212121"
+                            android:textSize="18sp" />
 
                     </LinearLayout>
 
@@ -150,6 +140,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:padding="12dp"
+                        android:textColor="#212121"
                         android:text="Culoarea:  "
                         android:textSize="18sp" />
 
@@ -211,32 +202,27 @@
                     android:layout_marginTop="12dp"
                     android:lineSpacingMultiplier="1.5"
                     android:padding="12dp"
-                    android:text="Description"
+                    android:text="Descrierea"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true">
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:cardElevation="5dp"-->
+                <!--app:cardUseCompatPadding="true">-->
+                <!---->
 
-                <!--<com.daimajia.slider.library.SliderLayout-->
-                    <!--android:id="@+id/sliderProduct"-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_products"-->
                     <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="200dp"-->
-                    <!--android:background="@android:color/black" />-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:contentDescription="@null"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--app:layout_collapseMode="parallax" />-->
 
-                <ImageView
-                    android:id="@+id/img_products"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@null"
-                    android:scaleType="centerCrop"
-                    app:layout_collapseMode="parallax" />
-
-            </android.support.v7.widget.CardView>
+            <!--</android.support.v7.widget.CardView>-->
 
         </LinearLayout>
 
