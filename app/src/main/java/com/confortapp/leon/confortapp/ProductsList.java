@@ -4,16 +4,21 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.confortapp.leon.confortapp.Common.Common;
 import com.confortapp.leon.confortapp.Database.Database;
 import com.confortapp.leon.confortapp.Model.Product;
@@ -134,7 +139,7 @@ public class ProductsList extends AppCompatActivity {
                     categoryId = getIntent().getStringExtra("CategoryId");
                 if (!categoryId.isEmpty() && categoryId != null) {
                     if (Common.isConnectedToInternet(getBaseContext()))
-                        loadListFood(categoryId);
+                        loadFurnitureList(categoryId);
                     else {
                         Toast.makeText(ProductsList.this, "Please check your Internet connection !", Toast.LENGTH_SHORT).show();
                         return;
@@ -151,7 +156,7 @@ public class ProductsList extends AppCompatActivity {
                     categoryId = getIntent().getStringExtra("CategoryId");
                 if (!categoryId.isEmpty() && categoryId != null) {
                     if (Common.isConnectedToInternet(getBaseContext()))
-                        loadListFood(categoryId);
+                        loadFurnitureList(categoryId);
                     else {
                         Toast.makeText(ProductsList.this, "Please check your Internet connection !", Toast.LENGTH_SHORT).show();
                         return;
@@ -268,21 +273,23 @@ public class ProductsList extends AppCompatActivity {
                 });
     }
 
-    private void loadListFood(String categoryId) {
+    private void loadFurnitureList(String categoryId) {
         adapter = new FirebaseRecyclerAdapter<Product, ProductsViewHolder>(Product.class,
                 R.layout.products_item,
                 ProductsViewHolder.class,
                 //like: Select * from Products where menuId =
-                productList.orderByChild("menuId").equalTo(categoryId)
-        ) {
+                productList.orderByChild("menuId").equalTo(categoryId)) {
             @Override
-            protected void populateViewHolder(final ProductsViewHolder viewHolder, final Product model, final int position) {
+            protected void populateViewHolder(final ProductsViewHolder viewHolder,
+                                              final Product model, final int position) {
                 viewHolder.products_name.setText(model.getName());
                 viewHolder.products_discount.setText(model.getDiscount());
-                viewHolder.products_price.setText(String.format("Prețul de la %s \t", model.getPrice().toString() + " MDL"));
-                Picasso.with(getBaseContext()).load(model.getImage())
-                        .into(viewHolder.products_image);
+                viewHolder.products_price.setText(String.format("Prețul de la %s \t",
+                        model.getPrice() + " MDL"));
 
+                Glide.with(ProductsList.this)
+                        .load(model.getImage())
+                        .into(viewHolder.products_image);
 
                 //Add Favorites
                 if (localDB.isFavorite(adapter.getRef(position).getKey()))

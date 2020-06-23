@@ -1,6 +1,6 @@
 package com.confortapp.leon.confortapp.ExpandableList;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import java.util.List;
  * Created by Leon on 19.03.2018.
  */
 
-public class InfoListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements
+public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements
         SectionHeaderViewHolder.HeaderViewHolderCallback {
     private static final int USER_TYPE = 1;
     private static final int HEADER_TYPE = 2;
@@ -48,6 +48,7 @@ public class InfoListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         int itemViewType = getItemViewType(position);
         ViewType viewType = viewTypes.get(position);
+
         if (itemViewType == USER_TYPE) {
             bindUserViewHolder(holder, viewType);
         } else {
@@ -59,12 +60,15 @@ public class InfoListAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
         int dataIndex = viewType.getDataIndex();
         SectionHeaderViewHolder headerViewHolder = (SectionHeaderViewHolder) holder;
         headerViewHolder.sectionTitle.setText(infoTypeList.get(dataIndex));
+
         if (isExpanded(position)) {
             headerViewHolder.sectionTitle
-                    .setCompoundDrawablesWithIntrinsicBounds(null, null, headerViewHolder.arrowUp, null);
+                    .setCompoundDrawablesWithIntrinsicBounds(null, null,
+                            headerViewHolder.arrowUp, null);
         } else {
             headerViewHolder.sectionTitle
-                    .setCompoundDrawablesWithIntrinsicBounds(null, null, headerViewHolder.arrowDown, null);
+                    .setCompoundDrawablesWithIntrinsicBounds(null, null,
+                            headerViewHolder.arrowDown, null);
         }
     }
 

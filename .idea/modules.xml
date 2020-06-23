@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ConfortApp.iml" filepath="$PROJECT_DIR$/ConfortApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ConfortApp-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ConfortApp-app.iml" group="ConfortApp/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Work-ConfortApp.iml" filepath="$PROJECT_DIR$/.idea/modules/Work-ConfortApp.iml" group="ConfortApp" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

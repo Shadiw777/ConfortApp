@@ -6,32 +6,28 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.view.menu.MenuView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.view.menu.MenuView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.confortapp.leon.confortapp.Common.Common;
 import com.confortapp.leon.confortapp.Interface.ItemClickListener;
 import com.confortapp.leon.confortapp.Model.Banner;
 import com.confortapp.leon.confortapp.Model.Category;
-import com.confortapp.leon.confortapp.R;
 import com.confortapp.leon.confortapp.ViewHolder.MenuViewHolder;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
@@ -185,6 +181,7 @@ public class Home extends AppCompatActivity
                     //PIZZA_01 => And we will use PIZZA for show description, 01 for food id to click
                     image_list.put(banner.getName() + "@@@" + banner.getId(), banner.getImage());
                 }
+
                 for (String key : image_list.keySet()) {
                     String[] keySplit = key.split("@@@");
                     String nameOfProduct = keySplit[0];

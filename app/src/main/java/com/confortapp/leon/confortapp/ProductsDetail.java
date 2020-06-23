@@ -1,15 +1,14 @@
 package com.confortapp.leon.confortapp;
 
 import android.content.Context;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.confortapp.leon.confortapp.Common.Common;
 import com.confortapp.leon.confortapp.Model.Product;
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
